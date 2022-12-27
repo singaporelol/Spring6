@@ -6,8 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring6" />
+        <module name="Annotation" />
+        <module name="Proxy" />
+        <module name="AOP" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Annotation" target="19" />
+      <module name="Spring6" target="19" />
+    </bytecodeTargetLevel>
   </component>
 </project>
