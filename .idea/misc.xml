@@ -9,7 +9,7 @@
         <option value="$PROJECT_DIR$/AOP/pom.xml" />
         <option value="$PROJECT_DIR$/Annotation/pom.xml" />
         <option value="$PROJECT_DIR$/Transaction/pom.xml" />
-        <option value="$PROJECT_DIR$/mybatis-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis/pom.xml" />
       </list>
     </option>
   </component>
