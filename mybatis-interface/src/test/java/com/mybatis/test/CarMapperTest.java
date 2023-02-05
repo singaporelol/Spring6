@@ -39,19 +39,21 @@ public class CarMapperTest {
         mapper.update(car);
         sqlSession.commit();
     }
+
     @Test
-    public void testSelectById(){
+    public void testSelectById() {
         SqlSession sqlSession = SqlSessionUtil.openSession();
         CarMapper mapper = sqlSession.getMapper(CarMapper.class);
         Car car = mapper.selectById(2L);
         System.out.println(car);
 
     }
+
     @Test
-    public void testSelectAll(){
+    public void testSelectAll() {
         SqlSession sqlSession = SqlSessionUtil.openSession();
         CarMapper mapper = sqlSession.getMapper(CarMapper.class);
         List<Car> cars = mapper.selectAll();
-        cars.forEach(c-> System.out.println(c));
+        cars.forEach(c -> System.out.println(c));
     }
 }
