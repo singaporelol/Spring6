@@ -9,6 +9,12 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <dependencies>
+        <!-- pagehelper插件 -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>5.3.1</version>
+        </dependency>
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
