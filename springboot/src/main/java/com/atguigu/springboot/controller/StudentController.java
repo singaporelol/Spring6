@@ -6,6 +6,7 @@ import jakarta.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
@@ -18,5 +19,13 @@ public class StudentController {
     public String queryStudent(@PathVariable int id){
         Student student = studentService.queryStudent(id);
         return student.toString();
+    }
+
+    @RequestMapping(value = "/student",method = {RequestMethod.POST})
+    @ResponseBody
+    public String insertStudent(Student student){
+
+        Integer count = studentService.insertStudent(student);
+        return count.toString();
     }
 }

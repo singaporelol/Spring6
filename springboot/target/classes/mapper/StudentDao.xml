@@ -6,5 +6,8 @@
     <select id="selectById" resultType="com.atguigu.springboot.model.Student">
         select id,name,age from student where id=#{stuId}
     </select>
+    <insert id="insertStudent">
+        insert into student (name, age) values (#{name},#{age})
+    </insert>
 
 </mapper>

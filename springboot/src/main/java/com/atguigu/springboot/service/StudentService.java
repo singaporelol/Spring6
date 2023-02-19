@@ -7,4 +7,6 @@ import org.springframework.stereotype.Service;
 public interface StudentService {
 
     Student queryStudent(Integer id);
+
+    Integer insertStudent(Student student);
 }
