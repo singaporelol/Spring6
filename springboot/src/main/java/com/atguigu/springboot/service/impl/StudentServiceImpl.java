@@ -24,7 +24,7 @@ public class StudentServiceImpl implements StudentService {
         System.out.println("准备执行SQL语句。。。。。。。");
         Integer result = studentDao.insertStudent(student);
         System.out.println("执行结果：========================" + result);
-        int m=10/0;
+        // int m=10/0;
 
         return result;
     }
